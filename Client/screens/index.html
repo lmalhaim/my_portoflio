@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script defer src="../../node_modules/swup/dist/swup.min.js"></script>
+        <script defer src="../scripts/index.js"></script>
+        <link rel="stylesheet" href="../styles/style.css" />
+        <title>Lynn Alhaimy</title>
+    </head>
+    <body>
+        <!--Background Image-->
+        <div class="navigation">
+            <img id="logo" class="fixed" src="../assets/Name Logo@1x.png" />
+            <div class="nav row fixed">
+                <a href="#about" onclick="navClick('about')"> ABOUT </a>
+                <a href="#projects" onclick="navClick('project')"> PROJECTS </a>
+                <a href="#resume" onclick="navClick('resume')"> RESUME </a>
+                <div id="nav_animation" class="animation"></div>
+            </div>
+        </div>
+        <div class="index_container">
+            <!--
+                <div class="relative section">
+                    <img id="lamp" class="absolute" src="../assets/lamp.png" />
+                    <div id="laptop" class="relative">
+                        <img id="laptop-body" src="../assets/laptop@1x.png" />
+                        <img
+                        id="laptop-logo"
+                        class="absolute"
+                        src="../assets/kisspng-macbook-air-apple-iphone-app-store-ios-mobile-app-development-symphony-solutions-5b811cb315be57.6408563315351881470891.png"
+                        />
+                    </div>
+                    <img id="plant" class="absolute" src="../assets/plant.png" />
+                    <img id="resume" class="absolute" src="../assets/resume.png" />
+                    <img id="coffee" class="absolute" src="../assets/coffee.png" />
+                </div>
+            -->
+            <!--About-->
+            <div class="relative" id="about">
+                <img id="lamp" class="absolute" src="../assets/lamp.png" />
+
+                <img id="plant" class="absolute" src="../assets/plant.png" />
+                <img id="coffee" class="absolute" src="../assets/coffee.png" />
+            </div>
+
+            <!--Projects-->
+            <div class="relative" id="projects">
+                <img id="lamp" class="absolute" src="../assets/lamp.png" />
+                <div id="laptop" class="relative">
+                    <img id="laptop-body" src="../assets/laptop@1x.png" />
+                    <img
+                    id="laptop-logo"
+                    class="absolute"
+                    src="../assets/kisspng-macbook-air-apple-iphone-app-store-ios-mobile-app-development-symphony-solutions-5b811cb315be57.6408563315351881470891.png"
+                    />
+                </div>
+                <img id="coffee" class="absolute" src="../assets/coffee.png" />
+            </div>
+
+            <!--Resume-->
+            <div class="relative" id="resume">
+                <img id="lamp" class="absolute" src="../assets/lamp.png" />
+                <img id="resume" class="absolute" src="../assets/resume.png" />
+            </div>
+        </div>
+    </body>
+</html>
