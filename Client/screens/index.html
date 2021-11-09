@@ -1,68 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script defer src="../../node_modules/swup/dist/swup.min.js"></script>
-        <script defer src="../scripts/index.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+        <!--CSS-->
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <!--Mine-->
         <link rel="stylesheet" href="../styles/style.css" />
+
         <title>Lynn Alhaimy</title>
     </head>
-    <body>
-        <!--Background Image-->
-        <div class="navigation">
-            <img id="logo" class="fixed" src="../assets/Name Logo@1x.png" />
-            <div class="nav row fixed">
-                <a href="#about" onclick="navClick('about')"> ABOUT </a>
-                <a href="#projects" onclick="navClick('project')"> PROJECTS </a>
-                <a href="#resume" onclick="navClick('resume')"> RESUME </a>
-                <div id="nav_animation" class="animation"></div>
-            </div>
+    <body >
+        <!--Navigation-->
+        <div class = "container-fluid top-bar position-sticky " id = "topBar">
+            <nav class = "navbar navbar-expand-md navbar-light">
+                <!--Logo-->
+                <a class = "navbar-brand" href = "#"> 
+                    <img src = "../assets/logo3.png" alt="Bootstrap 5 Logo" width="90" height="50" class="d-inline-block align-top" />
+                    <span class="hidden"> Lynn</span>
+                </a>
+                <!--Hamburger-->
+                <button 
+                    class = "navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu"
+                    aria-controls="toggleMobileMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+                <!--Nav Links-->
+                <div class = "collapse navbar-collapse " id="toggleMobileMenu">
+                    <ul class="navbar-nav text-center ms-auto shadow-3 p-2">
+                        <li>
+                            <a class="nav-link"  href="#about" >ABOUT</a>
+                        </li>
+                        <li >
+                            <a class="nav-link" href="#project">PROJECTS</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <buttoon class="nav-link dropdown-toggle"  id = "resumeDropDownBtn" data-bs-toggle="dropdown" aria-expanded="false">RESUME</buttoon>
+                                <ul class="dropdown-menu" aria-labelledby="resumeDropDownBtn">
+                                    <li>
+                                        <a class = "dropdown-item" href="lmalhaim_formal_Resume.pdf">
+                                            VIEW
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="lmalhaim_formal_Resume.pdf" download="Lynn_Alhaimy_resume">
+                                            DOWNLOAD
+                                        </a>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact" >CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="index_container">
-            <!--
-                <div class="relative section">
-                    <img id="lamp" class="absolute" src="../assets/lamp.png" />
-                    <div id="laptop" class="relative">
-                        <img id="laptop-body" src="../assets/laptop@1x.png" />
-                        <img
-                        id="laptop-logo"
-                        class="absolute"
-                        src="../assets/kisspng-macbook-air-apple-iphone-app-store-ios-mobile-app-development-symphony-solutions-5b811cb315be57.6408563315351881470891.png"
-                        />
+
+            <!--Header-->
+            <header class="bg-black-gray">
+                <div >
+                    <div class="top">
+                        <img id="plant"  class="position-relative"  src="../assets/header/plant.png" />
+                        <img id="lamp" class="" src="../assets/header/lamp_on.png" />
                     </div>
-                    <img id="plant" class="absolute" src="../assets/plant.png" />
-                    <img id="resume" class="absolute" src="../assets/resume.png" />
-                    <img id="coffee" class="absolute" src="../assets/coffee.png" />
+                    <div class="center">
+                        <img id="laptop" class="position-relative" src="../assets/header/laptop.png" />
+                        <img id="coffee" class="position-relative" src="../assets/header/coffee.png" />
+    
+                    </div>
                 </div>
-            -->
-            <!--About-->
-            <div class="relative" id="about">
-                <img id="lamp" class="absolute" src="../assets/lamp.png" />
-
-                <img id="plant" class="absolute" src="../assets/plant.png" />
-                <img id="coffee" class="absolute" src="../assets/coffee.png" />
-            </div>
-
-            <!--Projects-->
-            <div class="relative" id="projects">
-                <img id="lamp" class="absolute" src="../assets/lamp.png" />
-                <div id="laptop" class="relative">
-                    <img id="laptop-body" src="../assets/laptop@1x.png" />
-                    <img
-                    id="laptop-logo"
-                    class="absolute"
-                    src="../assets/kisspng-macbook-air-apple-iphone-app-store-ios-mobile-app-development-symphony-solutions-5b811cb315be57.6408563315351881470891.png"
-                    />
+            </header>
+            <!--ABOUT ME-->
+            <section class = "container-fluid bg-purple-gray" id = "about">
+                <div class="split ">
+                    <div class="center">
+                        <img src = "../assets/NYC_polaroid.png" class = "about-img"/>
+                    </div>
+                    <div class="center">
+                        <div class = "about-text text-color-light" >
+                            
+                            <p>
+                                I am graduating from the Univeristy of Houston on Dec 2021 with a Bachelor in Computer Science, so I have yet to specialize in any field. But here is a list of what I can do: 
+                            </p>
+                            <ul>
+                                <li>
+                                    Programming
+                                </li>
+                                <li>
+                                    Full Stack Web Development
+                                </li>
+                                <li>
+                                    Data Analysis
+                                </li>
+                            </ul>
+                            <p class = "highlight-text">
+                                I am captivated by work that require both practical and creative thinking.
+                            </p>
+                            
+                            <p>
+                                If  am not on my desk, then  I MUST be loving on my plants, cooking, or traveling. 
+                            </p>
+                           
+                            <p>   
+                                I am currently on the look out for a new job and would love to know of any oppurtinities. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <img id="coffee" class="absolute" src="../assets/coffee.png" />
-            </div>
+            </section>
+            <section class = "container-fluid text-color-light bg-black-gray" id ="skill">
+                <div class="content">
+                    <div class = "sub-section">
+                        <h5> Programming Languages</h5>
+                        <div class="d-flex d-row">
+                            <div class="position-relative icon">
+                                <a href="https://icons8.com/icon/tGvHBPJaKqEd/javascript" target="_blank">  
+                                    <img src="../assets/skill-icons/javascript.svg"/>
+                                </a>
+                                <p class = "icon-text">Javascript </p>
+                            </div>
+                            <div class="position-relative icon">
+                                <a href="https://icons8.com/icon/13441/python" target = "_blank"> <img src="../assets/skill-icons/python.svg"/>
+                                </a>
+                                <p class = "icon-text">Python </p>
+                            </div>
+                            <div class="position-relative icon">
+                                <a href="https://icons8.com/icon/AUyKy3IwmqM/html-5" target="_blank"><img src="../assets/skill-icons/html-5.svg"/></a>
+                                <p class = "icon-text">html 5 </p>
+                            </div>
+                            <div class="position-relative icon">
+                                <a href="https://icons8.com/icon/21278/css3" target="_blank"><img src="../assets/skill-icons/css3.svg"/></a>
+                                <p class = "icon-text"> CSS 3</p>
+                            </div>
+                            <div class="position-relative icon">
 
-            <!--Resume-->
-            <div class="relative" id="resume">
-                <img id="lamp" class="absolute" src="../assets/lamp.png" />
-                <img id="resume" class="absolute" src="../assets/resume.png" />
-            </div>
-        </div>
+                                <a href="https://icons8.com/icon/40669/c++" target="_blank"><img src="../assets/skill-icons/c++.svg"/></a>
+                                <p class = "icon-text"> C++</p>
+                            </div>
+                            <div class="position-relative icon">
+                                <a href="https://icons8.com/icon/38561/postgresql" target = "_blank"><img src="../assets/skill-icons/postgresql.svg"/></a>
+                                <p class = "icon-text">postgreSQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "sub-section">
+                        <h5> Open-source Softwares</h5>
+                        <div class="d-flex d-row">
+                            <div class="position-relative icon">
+                                <a href="https://icons8.com/icon/24895/npm" target="_blank"><img src="../assets/skill-icons/npm.svg"/></a>
+                            </div>
+                            <div class="position-relative icon">
+                                <a href="https://icons8.com/icon/123603/react-native" target="_blank"><img src="../assets/skill-icons/react-native.svg"/></a>
+                                <p class = "icon-text">React </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "sub-section">
+                        <h5> Other</h5>
+                        <div class="d-flex d-row ml-auto">
+                            <div class="position-relative icon">
+                                <a href="https://icons8.com/icon/117561/microsoft-excel-2019"  target="_blank"><img src="../assets/skill-icons/microsoft-excel-2019.svg"/></a>
+                            </div>
+                            <div class="position-relative icon">
+                                <a href="https://icons8.com/icon/Cy4DRjeYKjRa/adobe-photoshop" target="_blank">
+                                    <img src="../assets/skill-icons/adobe-photoshop.svg"/>
+                                </a>
+                                <p class = "icon-text"> Photoshop </p>
+                            </div>
+                            <div class="position-relative icon">
+                                <a href="https://icons8.com/icon/106438/autodesk-maya" target="_blank"><img src="../assets/skill-icons/autodesk-maya.svg"/></a>
+                                <p class = "icon-text"> Maya 3D</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!--Project-->
+            <section class="text-color-md-dark bg-purple-gray" id = "project" >
+                <div class="card">
+                    <div class="card-body">
+                        <div class = "card-header bg-transparent">
+                            <h5 class="card-title">Unify Airlines</h5>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                A web application that functions as simulation of a real-life airline website. 
+                            </p>
+                            <p>
+                                Built with a partner for Design File and Database Systems.
+                            </p>
+                            <p class="highlight-text">
+                                For more info visit source code
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <a class="text-color-md-dark" href = "http://143.198.141.21:1385">
+                            View Website
+                        </a>
+                        <br/>
+                        <a class="text-color-md-dark" href = "https://github.com/lmalhaim/Airline_web_app" target="_blank"> View Source Code</a>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class = "card-header bg-transparent">
+                            <h5 class="card-title">Reminder</h5>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                A simple cross-platform, reminder mobile app.
+                            </p>
+                            <p>
+                                Built as a side project
+                            </p>
+                            <p class="highlight-text">
+                                For more info visit source code
+                            </p>
+                        </div>
+                    </div>
+                    <a  href = "https://github.com/lmalhaim/Reminder_mobile_app" class="card-footer bg-transparent text-color-md-dark" target="_blank"> View Source Code</a>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class = "card-header bg-transparent">
+                            <h5 class="card-title">Tinge</h5>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                A 2D puzzle metroidvania. In a colorless landscape, explore and uncover the relics that one-by-one restore color to the world and the story behind its disapearance. 
+                            </p>
+                            <p>
+                                Built as a group project for Intro to Video Gaming and Animation
+                            </p>
+                            <p class="highlight-text">
+                                For more info visit source code
+                            </p>
+                        </div>
+                    </div>
+                    <a href = "https://github.com/MJakeShapiro/Tinge" class="card-footer bg-transparent text-color-md-dark" target="_blank"> View Source Code</a>
+                </div>
+            </section>
+                
+            <!--Contact-->
+            <footer class = "container-fluid d-flex flex-row " id = "contact">
+                <div class="d-flex align-items-center" >
+                    <p id = "license">
+                        © 2021 Lynn Alhaimy
+                    </p>
+                </div>
+                    <div class="contact-links">
+                        <a class = "contact-link" href = "mailto: leen.alhaimy@gmail.com" target="_blank">
+                            <img src = "../assets/email-logo-circle.png"   class="contact-img " />
+                        </a>
+                        <a class = "contact-link" href = "http://github.com/lmalhaim" target="_blank">
+                            <img src = "../assets/github-logo-circle.png"   class="contact-img " />
+                        </a>
+                        <a class = "contact-link" href="https://www.linkedin.com/in/leen-alhaimy-b7321819a/" target = "_blank">
+                            <img src = "../assets/linkedin-logo-circle.png"   class="contact-img " />
+                        </a>
+                        <!--a class = "contact-link" href="https://www.instagram.com/lynnalhaimy/" target="_blank">
+                            <img src = "../assets/instagram-logo-circle.png"   class="contact-img " />
+                        </a-->
+                    </div>
+                
+            </footer>
+            
+
+            
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="../scripts/index.js"></script>
+
     </body>
 </html>
